@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733477099222" clover="3.2.0">
-  <project timestamp="1733477099223" name="All files">
+<coverage generated="1750420833583" clover="3.2.0">
+  <project timestamp="1750420833583" name="All files">
     <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="9" coveredmethods="9" elements="35" coveredelements="35" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
-    <file name="store.js" path="/home/balde/www/pipeline_production/react-ejs-app-whispers/store.js">
+    <file name="store.js" path="/Users/omnyazer/react-ejs-app-whispers/store.js">
       <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="9" coveredmethods="9"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="8" type="stmt"/>
