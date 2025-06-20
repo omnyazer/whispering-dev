@@ -29,13 +29,13 @@ app.get("/api/v1/whisper/:id", async (req, res) => {
 });
 
 app.post("/api/v1/whisper", async (req, res) => {
-  const newWhisper = await create(req.body);
+  const newWhisper = await create(req.body.message);
   res.status(201).json(newWhisper);
 });
 
 app.put("/api/v1/whisper/:id", async (req, res) => {
   const id = parseInt(req.params.id);
-  const updated = await updateById(id, req.body);
+  const updated = await updateById(id, req.body.message);
   if (updated) {
     res.json(updated);
   } else {
@@ -43,7 +43,6 @@ app.put("/api/v1/whisper/:id", async (req, res) => {
   }
 });
 
-// Supprimer un murmure par ID
 app.delete("/api/v1/whisper/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   await deleteById(id);
